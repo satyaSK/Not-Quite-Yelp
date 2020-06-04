@@ -1,0 +1,28 @@
+version: '3'
+services: 
+    mongo-server:
+        container_name: mongo-server-v1
+        image: mongo:latest
+        environment:
+            MONGO_INITDB_ROOT_USERNAME: root
+            MONGO_INITDB_ROOT_PASSWORD: hunter2
+            MONGO_INITDB_DATABASE: yelp-db
+        ports: 
+            - 27017:27017
+        volumes:
+            - ./db:/docker-entrypoint-initdb.d
+            - mongo-volume:/data/db
+            #if using named volumes, you have to declare them below
+    
+    api:
+        container_name: node-server
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - 3000:3000
+volumes: 
+    mongo-volume:
+
+
+        # creates default network

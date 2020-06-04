@@ -1,0 +1,14 @@
+[
+{
+    "name": "Satya",
+    "businesses_owned": [0,1,2],
+    "reviews_owned": [0,1],
+    "photos_owned": [0]
+  },
+  {
+    "name": "Ami",
+    "businesses_owned": [3,4,5],
+    "reviews_owned": [2,3],
+    "photos_owned": [1]
+  }
+]

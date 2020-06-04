@@ -1,0 +1,34 @@
+[
+    {
+        "businessID": 0,
+        "ownerid": 0,
+        "business_name": "Joey's Pizza",
+        "star": "*****",
+        "expense": "$$",
+        "written_review": "Best pizza place! But, ma girlfriend doesn't eat chicken!!"
+        },
+        {
+        "businessID": 1,
+        "ownerid": 0,
+        "business_name": "Real Italian Espresso",
+        "star": "*****",
+        "expense": "$$$",
+        "written_review": "Quiet environment and tasty coffee"
+        },
+        {
+        "businessID": 3,
+        "ownerid": 1,
+        "business_name": "New Style Steak",
+        "star": "****",
+        "expense": "$$$$$",
+        "written_review": "Steak is above average but over expensive"
+        },
+        {
+        "businessID": 4,
+        "ownerid": 1,
+        "business_name": "Golden HongKong",
+        "star": "****",
+        "expense": "$$$",
+        "written_review": "-"
+        }
+]

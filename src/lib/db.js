@@ -1,0 +1,30 @@
+const {MongoClient} = require('mongodb')
+
+const mongoHost = "192.168.99.100"//process.env.MONGO_HOST || 'localhost'//for non-toolbox users
+const mongoPort = process.env.MONGO_PORT || 27017
+const mongoUser = process.env.MONGO_USER
+const mongoPassword = process.env.MONGO_PASSWORD
+const mongoDBName = process.env.MONGO_DB_NAME
+
+const mongoUrl = `mongodb://${mongoUser}:${mongoPassword}@${mongoHost}:${mongoPort}/${mongoDBName}`
+
+let db = null
+
+console.log(mongoUrl)
+
+exports.connectToDB = function (callback){
+    MongoClient.connect(mongoUrl, (err,client)=>{
+        if(!err){
+            console.log("Connected to MongoDB server successfully")
+            db = client.db(mongoDBName)
+            callback()
+        }else{
+            console.log(err)
+        }
+    })
+}
+
+exports.getDBReference = function(){
+    return db
+}
+

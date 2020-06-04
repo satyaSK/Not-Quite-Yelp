@@ -1,0 +1,18 @@
+[
+    {
+        "photoid":0,
+    "businessID": 0,
+    "ownerid": 0,
+    "business_name": "Pizza House",
+    "image_file": "image1.jpg",
+    "caption": "My favourite pizza"
+    },
+    {
+        "photoid":1,
+    "businessID": 1,
+    "ownerid": 1,
+    "business_name": "Real Italian Espresso",
+    "image_file": "image2.jpg",
+    "caption": "Coffee menu"
+    }
+]
