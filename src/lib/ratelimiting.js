@@ -1,7 +1,7 @@
 const redis = require('redis') 
 const { authenticateForRateLimiting } = require('./auth') 
 
-const redisHost = process.env.REDIS_HOST || '192.168.99.100' || 'localhost' //use localhost for linux/unix based kernels
+const redisHost = process.env.REDIS_HOST || 'localhost' //use localhost for linux/unix based kernels
 const redisPort = process.env.REDIS_PORT || '6379'
 
 const redisClient = redis.createClient(redisPort, redisHost) 
