@@ -4,6 +4,7 @@ db.createUser({
     roles: [ { role: "readWrite", db: "yelp-db" } ]
 })
 
+
 db.createCollection("users")
 db.createCollection("businesses")
 db.createCollection("reviews")
